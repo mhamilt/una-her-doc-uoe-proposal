@@ -1,43 +1,49 @@
 ## References To Read
 
+### Laser vibrometery
+
+Sririam, P. & Hanagud, Sathya & Craig, J.. (1992). [Mode shape measurement using a scanning laser Doppler vibrometer](https://scholar.lib.vt.edu/ejournals/MODAL/ijaema_v7n3/sriram/sriram.pdf). International Journal of Analytical and Experimental Modal Analysis. 7. 169-178. 
+
+Stanbridge, A. B., and D. J. Ewins. “MODAL TESTING USING A SCANNING LASER DOPPLER VIBROMETER.” Mechanical Systems and Signal Processing, vol. 13, no. 2, 1999, pp. 255–70, doi:10.1006/mssp.1998.1209.
+
 [11] R. Corradi, P. Fazioli, S. Marforio, A. Paluello, F. Ripamontit and G.
 Squicciarini.: [Modal analysis of a grand piano soundboard](https://eprints.soton.ac.uk/408405/1/20160514_postprint.pdf). In Proceedings of ISMA-USD, Leuven, Belgium, 2010.
 
 [12] D. W. Krueger, K. L. Gee and J. Grimshaw.: Acoustical and vibrometry analysis of a large Balinese gamelan gong. J. Acoust. Soc. Am. 128 (1): EL8-EL13,
 
-[5] M. J. Elejabarrietaa, A. Ezcurra and C. Santamaria. Evolution of the vibrational behavior of a guitar soundboard along successive construction phases by means of the modal analysis technique. J. Acoust. Soc. Am. 108 (1):
-369-378, 2000.
-
-NOTES: Using impact hammer and accelerometer
-
 [14] M. Jossic, A. Mamou-Mani, B. Chomette, D. Roze, F. Ollivier and C.
 Josserand.: Modal active control of Chinese gongs. J. Acoust. Soc. Am.
 141(6): 567-4578, 2017.
-
-NOTES: Laser Vibrometer and Grid pattern
-
-
-Farshidi, R., et al. [_Non-Contact Experimental Modal Analysis Using Air Excitation and a Microphone Array._](https://pdf.sciencedirectassets.com/271454/1-s2.0-S0263224110X00057/1-s2.0-S0263224110000357/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFEaCXVzLWVhc3QtMSJHMEUCIBDG8gHJJn7Fi%2BpgW3jagKnVgbLXoavV%2FH%2BUIRGjzOHXAiEA%2BsDTZTXrsu0g339ke81ZbtTTTkKB3vOVW1Wo%2B4afcIIqswUIWhAFGgwwNTkwMDM1NDY4NjUiDFsCaeHtXyg8Yiu0AyqQBdGUnOiT6g8eGfXQVCi%2BD993Uc6Sxa6oZAIHVTgthci6ijAgBxKuWGcnvugqSCFekLqdaWeEBuJ9oOZugou4pN6Agu5BOuhJKqnu%2B1bySpsNLTWH5CZfC%2FhXdIr2gDY4YQvRF%2FExMDnHWUo%2BQMb0fthdRvuNh%2B2EfFG9w385DEKymQwIImhfh%2FQX4z2HpkfNkYKExpMDW8umXfMRjzs9Std6lKqgczYWZFNImwewx9vJWiOuuiuQFQzopyae4pzzOennnUIOK9rd7BL%2FVuNfVLPH%2B4aTdOq4xR71R3SbtJmxP2AtH8xmbXU1JwSehhdbraE8DH40DB9fhGbxj0fzXN7y3JQJrXDbP26I5YDuweJ6BvikyfmQsDSYSS84fCjLdHZ9kvJvDkNBL1bNGwBD2ppnf6DuQZiayZT%2BkDjCdPtoHU%2FTBSloiv09tVsGaQVsMrWuXZkJH0Y9rdTwO%2FSXQ2i0xFnsTehlxV6aLWneZmppUqiOpVoCVHdxP6HQnsQLSQ3OVQnimkVjqCeBHJVIyS7X%2FVg6ecUZHMPNOlmESVIqqcdYHUCKuWW3qkSc6FxKhLvFAyhq1Ji4AG%2BnHzGyXDfbksnpn%2BX285Obz5%2FeIQPqZOxxzENQE9yCAr0xOpF%2F%2BDjK4oPWQQIlTl5fJIzshH6fGIACXgHZJAGuss2fKeOZzi5rfiOCTQE8SHoqGoRr1D9QCzb8kFcQ6dKXpoMkG0TjvaUkEuwUSH62qmxLaoUjz3wd%2FGNoIwrbvgTqxTw3rJu%2FK9qleWV4lR66HsdMx2gi08djj3ZpAA54JSm22q1TiL1fVoy5GwXCkuGcv7tm%2BfjqA24lAOF3U0QHM3%2BEX%2FWIlKOX1BRvd2%2Fp%2FIs%2FjBHBMPzLxa8GOrEBQeeNcIRhsgnMjnEBYPJ8pngKMzvRkUTE94EF3RaJ7ORAJzVSZaNDVOqsGITVDBMndVN003elm8GypptooxXQ%2B7KnqowBXLSWVxn0TNQm0P7M1%2Ff1%2B7z9sJBWmQkijZJucDQlBwvdsM62HaVaGUe6kOW15HZJFVYU%2Bid8maIdzWolTCdgFygtGQwPNL%2FfIjsB0ikh4%2BGkkArgw0V2%2FGu7rsVRfj%2BQy%2B1HqN9wFZuwC5X1&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240313T094014Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYS2GOCOV5%2F20240313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b2b24fdff874303f388b351bb6100098eab520713f444d4b1394415c2b66d050&hash=b8ee82232b7c1e12c557bb079c594e1dad12c10bc890f2698a757a218b7d0e19&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0263224110000357&tid=spdf-3218155b-31d0-46d7-b2f9-a03ede7c06d4&sid=2b331cc7537b994ab35916430fc5678add79gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=07155a52550d570305&rr=863b0fb3c939a265&cc=it)Measurement: Journal of the International Measurement Confederation, vol. 43, no. 6, 2010, pp. 755–65, doi:10.1016/j.measurement.2010.02.004.
-
-
 
 [15] Ewa Skrodzka, Andrzej Lapa, Bogumil B. J. Linde and Eike Rosenfeld.:
 Modal parameters of two incomplete and complete guitars differing in the bracing pattern of the soundboard. J. Acoust. Soc. Am. 130(4): 2186-2194, 
 2011.
 
-Notes: laser doppler vibrometery
-
 [23] S. Le Moyne, S. Le Conte, J. Battault and S. Vaiedelich. Restoration of a 17th century harpsichord to playable condition: A numerical experimental study. J Acoust Soc Am, 131(1):888-896, 2012.
-
-Notes: laser doppler vibrometery
 
 [31] C. Fritz, I. Cross, B. C. J. Moore and J. Woodhouse. Perceptual thresholds for detecting modifications applied to the acoustical properties of a violin. J Acoust Soc Am, 122(6):3640-3650, 2007.
 
-Notes: laser doppler vibrometery
+Li, Hui, et al. “Modal Shape Measurement of Fiber-Reinforced Composite Plate with High Efficiency and Precision Based on Laser Linear Scanning Method.” Measurement and Control (London), vol. 51, no. 9-10, 2018, pp. 470–87, doi:10.1177/0020294018802720.
+
+Notes: Demonstrates possibility of automated scanning
+
+### Measurement with Accelerometers
+
+[5] M. J. Elejabarrietaa, A. Ezcurra and C. Santamaria. Evolution of the vibrational behavior of a guitar soundboard along successive construction phases by means of the modal analysis technique. J. Acoust. Soc. Am. 108 (1):
+369-378, 2000.
+
+### Measurement with Microphone
+
+Farshidi, R., et al. [_Non-Contact Experimental Modal Analysis Using Air Excitation and a Microphone Array._](https://pdf.sciencedirectassets.com/271454/1-s2.0-S0263224110X00057/1-s2.0-S0263224110000357/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEFEaCXVzLWVhc3QtMSJHMEUCIBDG8gHJJn7Fi%2BpgW3jagKnVgbLXoavV%2FH%2BUIRGjzOHXAiEA%2BsDTZTXrsu0g339ke81ZbtTTTkKB3vOVW1Wo%2B4afcIIqswUIWhAFGgwwNTkwMDM1NDY4NjUiDFsCaeHtXyg8Yiu0AyqQBdGUnOiT6g8eGfXQVCi%2BD993Uc6Sxa6oZAIHVTgthci6ijAgBxKuWGcnvugqSCFekLqdaWeEBuJ9oOZugou4pN6Agu5BOuhJKqnu%2B1bySpsNLTWH5CZfC%2FhXdIr2gDY4YQvRF%2FExMDnHWUo%2BQMb0fthdRvuNh%2B2EfFG9w385DEKymQwIImhfh%2FQX4z2HpkfNkYKExpMDW8umXfMRjzs9Std6lKqgczYWZFNImwewx9vJWiOuuiuQFQzopyae4pzzOennnUIOK9rd7BL%2FVuNfVLPH%2B4aTdOq4xR71R3SbtJmxP2AtH8xmbXU1JwSehhdbraE8DH40DB9fhGbxj0fzXN7y3JQJrXDbP26I5YDuweJ6BvikyfmQsDSYSS84fCjLdHZ9kvJvDkNBL1bNGwBD2ppnf6DuQZiayZT%2BkDjCdPtoHU%2FTBSloiv09tVsGaQVsMrWuXZkJH0Y9rdTwO%2FSXQ2i0xFnsTehlxV6aLWneZmppUqiOpVoCVHdxP6HQnsQLSQ3OVQnimkVjqCeBHJVIyS7X%2FVg6ecUZHMPNOlmESVIqqcdYHUCKuWW3qkSc6FxKhLvFAyhq1Ji4AG%2BnHzGyXDfbksnpn%2BX285Obz5%2FeIQPqZOxxzENQE9yCAr0xOpF%2F%2BDjK4oPWQQIlTl5fJIzshH6fGIACXgHZJAGuss2fKeOZzi5rfiOCTQE8SHoqGoRr1D9QCzb8kFcQ6dKXpoMkG0TjvaUkEuwUSH62qmxLaoUjz3wd%2FGNoIwrbvgTqxTw3rJu%2FK9qleWV4lR66HsdMx2gi08djj3ZpAA54JSm22q1TiL1fVoy5GwXCkuGcv7tm%2BfjqA24lAOF3U0QHM3%2BEX%2FWIlKOX1BRvd2%2Fp%2FIs%2FjBHBMPzLxa8GOrEBQeeNcIRhsgnMjnEBYPJ8pngKMzvRkUTE94EF3RaJ7ORAJzVSZaNDVOqsGITVDBMndVN003elm8GypptooxXQ%2B7KnqowBXLSWVxn0TNQm0P7M1%2Ff1%2B7z9sJBWmQkijZJucDQlBwvdsM62HaVaGUe6kOW15HZJFVYU%2Bid8maIdzWolTCdgFygtGQwPNL%2FfIjsB0ikh4%2BGkkArgw0V2%2FGu7rsVRfj%2BQy%2B1HqN9wFZuwC5X1&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240313T094014Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYS2GOCOV5%2F20240313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b2b24fdff874303f388b351bb6100098eab520713f444d4b1394415c2b66d050&hash=b8ee82232b7c1e12c557bb079c594e1dad12c10bc890f2698a757a218b7d0e19&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0263224110000357&tid=spdf-3218155b-31d0-46d7-b2f9-a03ede7c06d4&sid=2b331cc7537b994ab35916430fc5678add79gxrqb&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=07155a52550d570305&rr=863b0fb3c939a265&cc=it)Measurement: Journal of the International Measurement Confederation, vol. 43, no. 6, 2010, pp. 755–65, doi:10.1016/j.measurement.2010.02.004.
+
+### IR measurement without impact hammer
 
 [25] L. Ausiello and V. Hockey. [Advances in acoustic instrument measurements and system design](https://www.researchgate.net/profile/Ludovico-Ausiello-2/publication/348399417_ADVANCES_IN_ACOUSTIC_INSTRUMENT_MEASUREMENTS_AND_SYSTEM_DESIGN/links/653fcc29ff8d8f507cd9d1d3/ADVANCES-IN-ACOUSTIC-INSTRUMENT-MEASUREMENTS-AND-SYSTEM-DESIGN.pdf?origin=publicationDetail&_sg%5B0%5D=-h37kQXlIQZbtN8oikZ7vrxwRlORNoJQV5YjmnFgCS14mvVSsbrYXLrcP6Fb7KhfH6jEaOA9v3LR31zGNmT74w.Wc8E2c47ofv3i8UlKpYcsSNCBKM6GFKC6ND_ydnLLeqrNwg0PIfkhybBrbMhVGUqmTfbV5B3vwRUPFIL9FGrCg&_sg%5B1%5D=fD15YXC8NrK61L973phoBOV2U3AYVSZViwRnC0oZqGw65P7GO2u4ifprhBYbA1mmt5lH9lxTz0WeVhsOllqucmwrX5X3pLPtuRG3ezAAxwFK.Wc8E2c47ofv3i8UlKpYcsSNCBKM6GFKC6ND_ydnLLeqrNwg0PIfkhybBrbMhVGUqmTfbV5B3vwRUPFIL9FGrCg&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19). In Proceedings of the Institute of Acoustics, 42 (3), 2020
 
-NOTES: Sine Sweep impulse response of instrument
+
+### Technical Documentation
+
+- Matiss Malahs _Design of a Low Cost Laser Vibrometer System_ Helsinki Metropolia University of Applied Sciences Bachelor of Engineering Electronics Thesis March 2015
 
 - [PSV-500 Scanning Vibrometer](https://www.polytec.com/fileadmin/website/vibrometry/pdf/OM_PB_PSV_E_52096.pdf)
 
