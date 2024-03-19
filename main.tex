@@ -67,7 +67,8 @@
 Laser vibrometery has long been a useful tool for for acoustic analysis
 \{SRIRIAM}. With respect to musical insrtuments, Modes give an understanding of
 material frequency response, mode shapes \cite{SKRODZKA, MOYNE}, but also
-provide a means of estimating material properties.
+potentially provide a means of estimating material properties
+\cite{DUCCESCHI2024109949}.
 
 One of the methods of measure is via laser vibrometry, which has been a useful
 tool for acousticians for a number of decades. Laser vibrometry provides both
@@ -196,6 +197,24 @@ use-case, the project would aim to provide an estimation of the material
 properties which can be used cross referenced with material properties found in
 literature.
 
+An array of MEMs microphone has been considered as an option for non-contact
+economic modal analysis. This is a promiosing apporach for ovtaining FRFs as
+outlined in \cite{Farshidi} and may be accurate enough for estimating material
+properties. MEMs microphone arrays as a means of plate mode measurement is
+deomnstrated in \cite{VELSEN} stating that for a MEMs microphone array:
+
+\begin{quote}
+low frequency domain eigenfrequencies of a plate-like structure can be
+identified with high accuracy. Identification of the mode shapes and the damping
+constants are shown not to be accurate.
+\end{quote}
+
+Since the focus of the project is on derivation of mode frequencies and shapes
+exploration specificallly is not a goal of the project, the usage of MEMs
+microphone arrays has not been considered.
+
+\cite{RAU}
+
 \hypertarget{project-description}{%
 \subsection{Project Description}\label{project-description}}
 
@@ -308,64 +327,31 @@ would require:
   Alternatively this step could be carried out from an external service.
 \end{itemize}
 
-\hypertarget{mems-microphone}{%
-\paragraph{MEMs Microphone}\label{mems-microphone}}
 
-\begin{itemize}
-\tightlist
-\item
-  MEMs microphones
+\hypertarget{laser-components}{%
+\paragraph{Laser Components}\label{laser-components}}
+
 
   \begin{itemize}
   \tightlist
   \item
-    For FRF {[}Farshidi{]} showed positive results
-
-    \begin{itemize}
-    \tightlist
-    \item
-      should be enough for estimating young's modulus
-    \end{itemize}
+    LM348 op-amps: used in the Transimpedance Amplifier as well as filtering
+    circuits, and level shifting. As recommended in \cite{MALAHS2015DESIGNOA} an
+    alternative would aso be sought to improve sensor bandwidth.
   \item
-    for plate mode shapes {[}van Velsen{]} results suggests such an experiment
-    setup is not accurate.
+    650nm Laser: Bandwidth chosen in \cite{MALAHS2015DESIGNOA} to match the
+    BPW34 photodiodes. The BPW3 is shown to have the best response in the
+    Infrared range so a dual laser system, one for aiming one for measuring,
+    would be desirable.
+  \item
+    BPW34 photodiodes: Used for detecting changes in the laser beam. Current is
+    induced when the light strikes the surface.
+  \item
+    Analog to Digital Converter: The GLV from \cite{MALAHS2015DESIGNOA} was
+    connected to a National Instruments myDAQ which provided enough resolution
+    for processing data. As such, an ADC of similar specifications would be
+    desirable.
   \end{itemize}
-\end{itemize}
-
-\hypertarget{glv}{%
-\paragraph{GLV}\label{glv}}
-
-\begin{itemize}
-\tightlist
-\item
-  components
-
-  \begin{itemize}
-  \tightlist
-  \item
-    lm384 op-amps
-  \item
-    laser
-
-    \begin{itemize}
-    \tightlist
-    \item
-      650nm
-    \item
-      infrared
-    \item
-      BPW34 photodiodes
-    \end{itemize}
-  \end{itemize}
-\item
-  analysis
-
-  \begin{itemize}
-  \tightlist
-  \item
-    ni mydaq
-  \end{itemize}
-\end{itemize}
 
 \hypertarget{ldv}{%
 \subparagraph{LDV}\label{ldv}}
@@ -427,21 +413,50 @@ would require:
 \hypertarget{safety}{%
 \subsubsection{Safety}\label{safety}}
 
+Since the project will be working with lasers there are safety concerns. The
+design in \cite{MALAHS2015DESIGNOA} was Category 3R laser with a maximum power
+of 5mW at 3V.
+
 \begin{quote}
-When designing a system which uses a laser that is not enclosed in a casing the
-maxi- mum output power of the laser must be carefully considered, as improper
-design may lead to lasting health damage. The lasers used in LDV systems
-available on the market essentially do not exceed 5 mW output power and can be
-used without particular caution. - Matiss Malahs design was a 3R laser, safety
-precaustions would need to be taken iof recreating. - Design is intended to
-battery powered or from a commercial Power Supply Unit. No high-voltage power
-amplification will be taking place.
+Class 3R lasers are specified as to create no risk to skin and low risk to eyes
+with power limit up to 5 mW [\cite{SAFETY}]
 \end{quote}
+
+Eye protection would need to be worn and appropriate signage displayed in any
+workshop space.
+
+The designs considered would initially use a commercial power supply unit or
+battery power supply units. As such, power electronic design is not considered
+as part of the design process and no high-voltage power electronic design will
+be taking place.
+
 
 \hypertarget{outcomes}{%
 \subsubsection{Outcomes}\label{outcomes}}
 
+\subsubsection{Stage One: Measurment unit prototypoing}
+
+The goal of this stage is to create a LDV and GLV unit. The LDV would not
+contain a Bragg Cell and the viability of the system can be tested against the
+GLV.
+
+\subsubsection{Stage Two: Linear Scanning}
+
+Both LDV and GLV units will be tested when mounted on a linear scanning system.
+
+Main goal is to create a means of stipulating geomerty and asses each unit
+against a simple rectangular plate.
+
+\subsubsection{Stage Three: Documentation}
+
+The final stage will hope to generate a document which will facilitate future
+modal analysis Projects. Focus of this stage is the collation of a written
+thesis, technical documentation and an open source hardware and software
+repository, with a focus on software sustainability to make the project more
+easily developed and reproducible in the future.
+
 \begin{itemize}
+
 \tightlist
 \item
   Phases of the project
