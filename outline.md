@@ -2,8 +2,6 @@
 
 ## Overview
 
-- rough history
-
 Mode measurement is useful tool for instrument makers to understand the
 materials with which they are working. Modes give an understanding of material
 frequency response but also provide a means of estimating material properties
