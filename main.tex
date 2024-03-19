@@ -18,8 +18,10 @@
   % xetex/luatex font selection
 \fi
 
+% Bibliography Package and Setup
 \usepackage[sorting=none]{biblatex}
 \addbibresource{bibliography.bib}
+
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \IfFileExists{microtype.sty}{% use microtype if available
@@ -65,7 +67,7 @@
 \end{itemize}
 
 Laser vibrometery has long been a useful tool for for acoustic analysis
-\{SRIRIAM}. With respect to musical insrtuments, Modes give an understanding of
+\cite{SRIRIAM}. With respect to musical insrtuments, Modes give an understanding of
 material frequency response, mode shapes \cite{SKRODZKA, MOYNE}, but also
 potentially provide a means of estimating material properties
 \cite{DUCCESCHI2024109949}.
@@ -96,7 +98,7 @@ easily reproduecable. Multiple rounds of measurmenets could be taken and the
 accuracy of the experimental setup could be more easily tested. Linear scanning
 using a standard 2 dimensional plotter yielded high-resolution results in
 \cite{HUI}. Such a measurement arrangement would allow for automated scanning.
-The 3D printed impact hammer used for measurements  in \{RAU} can also be
+The 3D printed impact hammer used for measurements  in \cite{RAU} can also be
 combined with an actuator (e.g. a solenoid) for reproducible excitation.
 
 ![image of 2D plotted from \cite{HUI}](.img/<>)
@@ -118,45 +120,45 @@ The output would consist of:
 
 \begin{itemize}
 \tightlist
-\item
-  An open source, version controlled framework for designing a low-cost,
+  \item
+    An open source, version controlled framework for designing a low-cost,
   non-contact measurement system for musical instrument soundboards consisting
   of:
 
   \begin{itemize}
-    \tightlist
+  \tightlist
     \item
       Operation Repository: An open source repository containg:
-      
-      \begin{itemize}
-        \tightlist
-        \item
-        Instructions for self-assembly of measurement tools and experiment setup 
-        \item
-        CAD models for digital fabrication of components and PCB
-        \item
-        Control software for automation of a measurement rig
-        \item
-        Analysis software for recording, processing and analysing measurement
-        data.
-      \end{itemize}
-    
-    \item
-    Technical Documentation: A document containing: , justification of design
-    decisions, discussion of formulae required to obtain detain from the system, 
+
     \begin{itemize}
-      \tightlist
+    \tightlist
       \item
-      An outline of the design process
+        Instructions for self-assembly of measurement tools and experiment setup 
       \item
-      Technical background and justifications for any design decision and
+        CAD models for digital fabrication of components and PCB
+      \item
+        Control software for automation of a measurement rig
+      \item
+        Analysis software for recording, processing and analysing measurement
+      data.
+    \end{itemize}
+
+  \item
+    Technical Documentation: A document containing: , justification of design
+  decisions, discussion of formulae required to obtain detain from the system, 
+    \begin{itemize}
+    \tightlist
+      \item
+        An outline of the design process
+      \item
+        Technical background and justifications for any design decision and
       components utislised    
       \item
-      Design modifications, their relative cost to the project and impact on
+        Design modifications, their relative cost to the project and impact on
       results. 
     \end{itemize}
   \end{itemize}
-
+\end{itemize}
 
 
 
@@ -167,12 +169,12 @@ Laser Doppler virbo
 
 \begin{itemize}
 \tightlist
-\item
-  what has been in the field
-\item
-  what is the trajectory
-\item
-  where is there room for improvement
+  \item
+    what has been in the field
+  \item
+    what is the trajectory
+  \item
+    where is there room for improvement
 \end{itemize}
 
 Matiss Malahs researched low-cost laser vibrometer system for a PhD thesis
@@ -351,63 +353,50 @@ would require:
     connected to a National Instruments myDAQ which provided enough resolution
     for processing data. As such, an ADC of similar specifications would be
     desirable.
+  \item
+    Linear Scanning Rig: An assembly of multiple stepper motors cascade onto two
+    sets of rails, one for movement in 2 dimensions. These rigs can be purchased
+    as a kit or assembled from seprate parts if a suitable size is not
+    available. They consist of:
+    \begin{itemize}
+    \tightlist
+    \item
+      Stepper Motor: Motors and associated driver chips that can be controlled
+      step-wise for accuracy.
+    \item
+      Micro-Controller Unit: Programmable computer chip that would allow for
+      firmware to be written in order to control the steppers.
+    \item
+      Guide Rails: Lubricated aluminium rails to help guide each platform along
+      a particular dimensions
+    \item
+      Aluminium Extrusion: Used as frame and platform for stepper motors and the
+      vibrometer assembly.
+    \end{itemize}
   \end{itemize}
 
-\hypertarget{ldv}{%
-\subparagraph{LDV}\label{ldv}}
+\hypertarget{optics}{%
+\subparagraph{Optical Components}\label{optics}}
+
+The LDV requires some additional optical components in order to function
+correctly and constitute the bulk of the cost of fabrication
 
 \begin{itemize}
 \tightlist
 \item
-  beam splitter(s)
+  Beam Splitter: Allows for redirection of laser beam into two direction.
 \item
-  mirror
+  Mirror: for redirecting beams, Fibre optics are also a possible substitution.
 \item
-  Bragg Cell
-
-  \begin{itemize}
-  \tightlist
-  \item
-    fibre optics
-  \item
-    From Matiss Malahs \emph{If the information about the direction in which the
-    object is moving is not necessary, the Bragg cell can be omitted. {[}9.{]}}
-  \end{itemize}
+  Bragg Cell: (Optional) Also known as Acousto-optic Modulators. This component
+  modulates the light frequency which produces a fringe pattern on the
+  photodetector. The bragg cell is the most expensive component of the LDV and
+  as suggested in \cite{MALAHS2015DESIGNOA}, the inclusion is not necessary if
+  directional information is not required. The first design of the LDV would
+  omit this comonent entirely.
 \item
-  Questions
-
-  \begin{itemize}
-  \item
-    x3 beam splitters
-  \item
-    mirror
-  \item
-    brag cell in the order of £1500
-
-    \begin{itemize}
-    \tightlist
-    \item
-      the cell
-    \item
-      fibre optics
-    \item
-      focal lens
-    \end{itemize}
-  \item ~ \hypertarget{digital-signal-processing}{%
-    \subsection{digital signal processing}\label{digital-signal-processing}}
-  \end{itemize}
-\item
-  Linear Scanning rig
-
-  \begin{itemize}
-  \tightlist
-  \item
-    steppers
-  \item
-    arduino
-  \item
-    extrusion
-  \end{itemize}
+  Focal Lens: (Optional) Should the laser beam need to be focused into a fibre
+  optic cable, a beam splitter would be necessary.
 \end{itemize}
 
 \hypertarget{safety}{%
@@ -455,27 +444,6 @@ thesis, technical documentation and an open source hardware and software
 repository, with a focus on software sustainability to make the project more
 easily developed and reproducible in the future.
 
-\begin{itemize}
-
-\tightlist
-\item
-  Phases of the project
-
-  \begin{itemize}
-  \tightlist
-  \item
-    First sensor fabrications
-
-    \begin{itemize}
-    \tightlist
-    \item
-      testing / reproducibility
-    \item
-      cost tracking
-    \end{itemize}
-  \item
-    automation
-  \end{itemize}
-\end{itemize}
+\printbibliography
 
 \end{document}
