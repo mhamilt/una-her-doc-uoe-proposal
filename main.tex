@@ -66,8 +66,7 @@
 
 Mode measurement is useful tool for instrument makers to understand the
 materials with which they are working. Modes give an understanding of material
-frequency response but also provide a means of estimating material properties
-that would typically be derived through destructive means.
+frequency response but also provide a means of estimating material properties.
 
 One of the methods of measure is via laser vibrometry, which has been a useful
 tool for acousticians for a number of decades. Laser vibrometry provides both
@@ -81,7 +80,11 @@ vibration analysis, a level accuracy unlikely to be utlilsed when applied to
 musical instrumebts. The thesis by Malah \cite{MALAHS2015DESIGNOA} outlines such
 a system for a Grazing Laser Vibrometer. This project would expand Malah's work
 by applying it to a Laser Doppler Vibrometer as well as automating the process
-with respect to soundboard measurments.
+with respect to soundboard measurments. 
+
+Estimation of material properties of plates  without the additonal cost of
+Finite Element Method modelling software.
+
 
 Project would aim to explore automation of the process the benefits of which are
 two-fold. Firstly, automation would allow the measurement process to take place
@@ -107,73 +110,53 @@ they will serve.
 Goal of the project would be the design of an automated non-contact measurement
 system for musical instrument soundboards. The system would aim to be economic
 to fabricate in comparison to current commercially available laser vibrometers.
+
+
 The output would consist of:
 
 \begin{itemize}
 \tightlist
 \item
-  a framework for designing a low-cost, non-contact measurement system for
-  musical instrument soundboards.
+  An open source, version controlled framework for designing a low-cost,
+  non-contact measurement system for musical instrument soundboards consisting
+  of:
 
   \begin{itemize}
-  \tightlist
-  \item
-    comprehensive instructions for self assembly
-  \item
-    cad models for fabrications
-  \item
-    document outlining:
-
-    \begin{itemize}
     \tightlist
     \item
-      the design process
+      Operation Repository: An open source repository containg:
+      
+      \begin{itemize}
+        \tightlist
+        \item
+        Instructions for self-assembly of measurement tools and experiment setup 
+        \item
+        CAD models for digital fabrication of components and PCB
+        \item
+        Control software for automation of a measurement rig
+        \item
+        Analysis software for recording, processing and analysing measurement
+        data.
+      \end{itemize}
+    
     \item
-      justification for any design decision
-    \item
-      technichal background to make modification in the design easier to
-      undertake.
-    \item
-      record each tier of precision, it's relative cost to the entire tool and
-      benefits it introduces.
-    \end{itemize}
-  \item
-    open source software toolkit for
-
+    Technical Documentation: A document containing: , justification of design
+    decisions, discussion of formulae required to obtain detain from the system, 
     \begin{itemize}
-    \tightlist
-    \item
-      control
-    \item
-      data processing
+      \tightlist
+      \item
+      An outline of the design process
+      \item
+      Technical background and justifications for any design decision and
+      components utislised    
+      \item
+      Design modifications, their relative cost to the project and impact on
+      results. 
     \end{itemize}
   \end{itemize}
-\item
-  rough outline of the problem
-\item
-  motivations
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Affordable modal anaylis on plates
 
-    \begin{itemize}
-    \tightlist
-    \item
-      ``Polytec'' or ``OMS Corporation'' sort of have a monopoly
-    \item
-      field lartgely dominited by only a handful of companies.
-    \end{itemize}
-  \item
-    Youn'gs estimation of material without additonal cost of FEM modelling
-    software
-  \end{itemize}
-\item
-  introduction of the solution
-\item
-  some definitions of terms
-\end{itemize}
+
 
 Laser Doppler virbo
 
@@ -189,6 +172,19 @@ Laser Doppler virbo
 \item
   where is there room for improvement
 \end{itemize}
+
+Matiss Malahs researched low-cost laser vibrometer system for a PhD thesis
+\cite{MALAHS2015DESIGNOA}. The thesis is an overview of interferometry, laser
+doppler vibrometers and Grazing laser vibrometers as well as an instruction on
+fabricating a GLV economically. This project would expand on Matiss' work by
+exploring the construction of both affordable LDV and GLV measurmenet units, in
+particular with an application to soundboards. Measuring musical instrument
+soundbard does not require as wide a frequency bandwidth compared to other
+vibration analysis applications. The polytec PSV400  has bandwidth up to 1000kHz
+\cite{PSV400}, compare to soundboards where only up to 20kHz are consideration
+for measurement as it is the limit of human hearing.
+
+The paper Hui et al. \cite{HUI} considers linear scanning.
 
 \hypertarget{project-description}{%
 \subsection{Project Description}\label{project-description}}
