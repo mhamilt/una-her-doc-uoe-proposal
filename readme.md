@@ -57,6 +57,12 @@ Q. _What is speckle noise?_
 A. **Interference in coherent imagary. Problem with high-frequency**
 
 
+### Images to collect
+
+- [x] Laser Vibrometer Setup
+- [x] Linear scanning setup
+- [x] mode shapes reading (guitars form \cite{SKRODZKA})
+- [x] Block diagrams from \cite{MALAHS2015DESIGNOA}
 
 ### Extracts
 
