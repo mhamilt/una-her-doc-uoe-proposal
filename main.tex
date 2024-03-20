@@ -22,6 +22,9 @@
 \usepackage[sorting=none]{biblatex}
 \addbibresource{bibliography.bib}
 
+\usepackage{graphicx}
+\usepackage{subfig}
+
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \IfFileExists{microtype.sty}{% use microtype if available
@@ -49,22 +52,25 @@
 \urlstyle{same}
 \hypersetup{ hidelinks, pdfcreator={LaTeX via pandoc}}
 
-\author{}
-\date{}
+\title{Autmated Non-contact measurement system design for muscial instryment soundboards}
+\author{Matthew Hamilton}
+\date{\today}
 
 \begin{document}
 
-\hypertarget{uoe-unaherdoc-proposal}{%
-\section{UoE UnaHerDoc Proposal}\label{uoe-unaherdoc-proposal}}
+\begin{titlepage}
+\maketitle
+
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/mode-shape.png}
+\label{fig:mode-shape}
+\end{figure}
+\end{titlepage}
 
 \hypertarget{overview}{%
-\subsection{Overview}\label{overview}}
+\section{Overview}\label{overview}}
 
-\begin{itemize}
-\tightlist
-\item
-  rough history
-\end{itemize}
 
 Laser vibrometery has long been a useful tool for for acoustic analysis
 \cite{SRIRIAM}. With respect to musical insrtuments, Modes give an understanding of
@@ -86,6 +92,13 @@ a system for a Grazing Laser Vibrometer. This project would expand Malah's work
 by applying it to a Laser Doppler Vibrometer as well as automating the process
 with respect to soundboard measurments. 
 
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/ldv-setup.png}
+\caption{LDV Measurement Setup in \cite{MANSOUR}}
+\label{fig:ldv-setup}
+\end{figure}
+
 Estimation of material properties of plates  without the additional cost of
 Finite Element Method modelling software.
 
@@ -101,7 +114,12 @@ using a standard 2 dimensional plotter yielded high-resolution results in
 The 3D printed impact hammer used for measurements  in \cite{RAU} can also be
 combined with an actuator (e.g. a solenoid) for reproducible excitation.
 
-![image of 2D plotted from \cite{HUI}](.img/<>)
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/linear-scanning-ldv.png}
+\caption{LDV Mounted to plotter (labelled X-Y sliding table) \cite{HUI}}
+\label{fig:ldv-linear-scanner}
+\end{figure}
 
 The barrier to entry for technical projects of this kind has been lowered over
 the past few decades. What was once quite a technical undertaking is now more
@@ -110,6 +128,13 @@ or single-board computers (SBCs) like the Raspberry Pi, which can easily
 interface with sensors and actuators to prototype haptic devices. This proposal
 will cover what components will be required in the project and what function
 they will serve.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/guitar-mode-table.png}
+\caption{Table of guitar body mode shapes derived from LDV in \cite{SKRODZKA}}
+\label{fig:ldv-setup}
+\end{figure}
 
 Goal of the project would be the design of an automated non-contact measurement
 system for musical instrument soundboards. The system would aim to be economic
@@ -159,9 +184,16 @@ The output would consist of:
   \end{itemize}
 \end{itemize}
 
+Laser Doppler Vibrometer and Grazing Laser Vibrometer
 
-
-Laser Doppler virbo
+\begin{figure}%
+  \centering
+  \subfloat[\centering LDV Block Diagram]{{\includegraphics[width=5cm]{./img/ldv-block.png} }}%
+  \qquad
+  \subfloat[\centering GLV Block Diagrams]{{\includegraphics[width=5cm]{./img/grv-block.png} }}%
+  \caption{Block Diagrams of both LDV and GLV from \cite{MALAHS2015DESIGNOA}}%
+  \label{fig:laser-block}%
+\end{figure}
 
 \hypertarget{recent-research}{%
 \subsection{Recent Research}\label{recent-research}}
@@ -200,7 +232,7 @@ literature.
 
 An array of MEMs microphone has been considered as an option for non-contact
 economic modal analysis. This is a promiosing apporach for ovtaining FRFs as
-outlined in \cite{Farshidi} and may be accurate enough for estimating material
+outlined in \cite{FARSHIDI2010755} and may be accurate enough for estimating material
 properties. MEMs microphone arrays as a means of plate mode measurement is
 deomnstrated in \cite{VELSEN} stating that for a MEMs microphone array:
 
