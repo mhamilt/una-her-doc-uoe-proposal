@@ -302,3 +302,4 @@ TSWLatexianTemp*
 
 # macOS
 .DS_Store
+.vscode/settings.json
