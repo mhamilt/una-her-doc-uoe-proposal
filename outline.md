@@ -163,6 +163,14 @@ This section lay out objectives, give a rough timeline and stipulate which mater
   - arduino
   - extrusion
 
+#### From Mark Rau
+
+- _"One common method is known as the “roving hammer” method"_ [Brian J Schwarz and Mark H Richardson. Experimental modal analysis. CSI Reliability
+week, 35(1):1–12, 1999.].
+- An alternative and preferred method for 2D modal scans is a scanning laser Doppler vibrometer such as the Polytec PSV-500 [Polytec. PSV-500 Scanning Vibrometer. https://www.polytec.com/eu/vibrometry/ products/full-field-vibrometers/psv-500-scanning-vibrometer. Accessed 04-10-2023.]
+- 
+- Wonsung. 20kpps galvo galvanometer based optical scanner including show card for animation light. https://www.amazon.com/Generic-Galvanometer-Optical-Scanner-Including/dp/B01IZPMUPO/ref=cm_cr_arp_d_product_top?ie=UTF8. Accessed 04-10-2023. stage animation laser lights
+
 ### Safety
 
 > When designing a system which uses a laser that is not enclosed in a casing
