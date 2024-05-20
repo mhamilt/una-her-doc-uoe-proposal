@@ -71,30 +71,34 @@
 \hypertarget{overview}{%
 \section{Overview}\label{overview}}
 
-Modal analysis provide an understanding of material frequency response,
-vibration patterns through mode shapes \cite{SKRODZKA, MOYNE}, and can also
-provide a means of estimating material properties \cite{DUCCESCHI2024109949}.
-Risk to an instrument is prominent concern during analysis, in particular to
-historic musical instruments. Non-contact methods for analysis are an appealing
-method for modal analysis for fragile or expensive instruments. 
+Modal analysis is a method to extrapolate frequency response, vibration patterns
+of a surface \cite{SKRODZKA, MOYNE}, and can also provide a means of estimating
+material properties \cite{DUCCESCHI2024109949}, which is important information
+in the analysis of musical instruments \cite{FRITZ,MOYNE,ELEJABARRIETA}.
+
+Risk to a musical instrument is prominent concern during analysis, in particular
+to historic musical instruments. This has lead to the emergence of non-contact
+methods for analysis, which are an appealing method for modal analysis for
+fragile, historically important, and expensive instruments.
 
 Laser vibrometry has long been a useful tool for acoustic analysis
-\cite{SRIRIAM}. With respect to musical instruments, laser vibrometry provides a
-non-obtrusive means of obtaining accurate results, however it does have a
-limitation in the form of cost. A modest laser doppler vibrometer (LDV) cost in
-the order of €20k. In addition, estimation of material properties of soundboards
-comes with an additional cost of Finite Element Method modelling software. This
-is a cost that is difficult to justify for the usage it would see by instrument
-collector and museums. The market for laser vibrometer is also dominated by a
-handful of companies and it seems unlikely this cost will shrink any time soon.
-Laser vibrometers are precision engineered for all vibration analysis, a level
-accuracy unlikely to be utlilsed when applied to musical instruments. 
+\cite{SRIRIAM}, especially with respect to musical instruments. Laser vibrometry
+provides a non-obtrusive means of obtaining accurate results, however it does
+have a limitation in the form of cost. A modest laser doppler vibrometer (LDV)
+cost in the order of €20k. In addition, estimation of material properties of
+soundboards comes with an additional cost of Finite Element Method modelling
+software. This is a cost that is difficult to justify for the usage it would see
+by instrument collector and museums. The market for laser vibrometer is also
+dominated by a handful of companies and it seems unlikely this cost will shrink
+any time soon. Laser vibrometers are precision engineered for all vibration
+analysis, a level accuracy unlikely to be utlilsed when applied to musical
+instruments. 
 
 The thesis by Malah \cite{MALAHS2015DESIGNOA} outlines such a system for a
 Grazing Laser Vibrometer. The proposed project would expand Malah's work by
 applying it to a Laser Doppler Vibrometer. In addition, the project will explore
 automating the process of measurement and provide an open source framework for
-analysing result.
+analysing results.
 
 \begin{figure}
   \centering
@@ -103,32 +107,12 @@ analysing result.
   \label{fig:ldv-setup}
 \end{figure}
 
-  
-The benefits of automating the measurement process for modal analysis are
-two-fold. Firstly, automation would allow the entire process to take place with
-minimum manual intervention, saving time in labour and potentially time in
-carrying out measurements. Secondly, an automated process would make
-measurements more easily reproducible. Multiple rounds of measurements could be
-taken and the accuracy of the experimental setup could be more easily tested.
-Linear scanning using a standard two-dimensional plotter yielded high-resolution
-results in \cite{HUI}. Such a measurement arrangement would allow for automated
-scanning. The 3D printed impact hammer used for measurements  in \cite{RAU} can
-also be combined with an actuator (e.g. a solenoid) for reproducible excitation.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.66\textwidth]{./img/linear-scanning-ldv.png}
-\caption{LDV Mounted to plotter (labelled X-Y sliding table) \cite{HUI}}
-\label{fig:ldv-linear-scanner}
-\end{figure}
 
 The barrier to entry for technical projects of this kind has been lowered over
 the past few decades. What was once quite a technical undertaking is now more
 achievable with readily available micro-controller units (MCUs) like the Arduino
 or single-board computers (SBCs) like the Raspberry Pi, which can easily
-interface with sensors and actuators to prototype haptic devices. This proposal
-will cover what components will be required in the project and what function
-they will serve.
+interface with sensors and actuators to prototype haptic devices. 
 
 \begin{figure}
 \centering
@@ -140,27 +124,44 @@ they will serve.
 \hypertarget{recent-research}{%
 \subsection{Recent Research}\label{recent-research}}
 
-This section will discuss some recent projects focused on the topics of
-non-contact, automated modal analysis and making the process more economically
-accessible. I will then elaborate on how the proposed projects intends to
-enhance and build on these projects. 
+This section will discuss some projects from previous years focused on the
+topics of non-contact, automated modal analysis and making the process more
+economically accessible. 
 
-
-Matiss Malahs researched low-cost laser vibrometer system for a PhD thesis
-\cite{MALAHS2015DESIGNOA}. The thesis is an overview of interferometry, laser
+ The thesis by Matiss Malahs \cite{MALAHS2015DESIGNOA} researched low-cost laser
+vibrometer system. The thesis provides an overview of interferometry, laser
 doppler vibrometers and Grazing laser vibrometers as well as an instruction on
-fabricating a GLV economically. This project would expand on Matiss's work by
-exploring the construction of both affordable LDV and GLV measurement units, in
-particular with an application to soundboards. Measuring musical instrument
-soundboard does not require as wide a frequency bandwidth compared to other
-vibration analysis applications. The Polytec PSV400  has bandwidth up to 1000kHz
-\cite{PSV400}, compare to soundboards where only up to 20kHz are consideration
-for measurement as it is the limit of human hearing.
+fabricating a GLV economically. The proposed project would aim to expand on
+Matiss's work by exploring the construction of both affordable LDV and GLV
+measurement units, in particular with an application to soundboards. Measuring
+musical instrument soundboard does not require as wide a frequency bandwidth
+compared to other vibration analysis applications. Frequency analysis for
+soundboards generally considers up to 20kHz and a standard LDV would have a
+bandwidth of up to 1000kHz \cite{PSV400}. The results obtain in the paper by
+Malahs suggests the bandwidth of the LDV can be reduced to the benefit of lower
+manufacturing costs.
 
-The paper Hui et al. \cite{HUI} considers the addition of a linear scanning unit
-paired with a laser vibrometer. In this paper high-resolution results were
+The paper by Hui et al. \cite{HUI} considers the pairing of a linear scanning
+unit with a laser vibrometer, which allowed for high-resolution results to be
 obtained. This project would expand by applying the same methodology to an
-economic laser vibrometer assembly.
+economic laser vibrometer assembly as a measurement setup of this kind would
+allow for automated scanning. The benefits of automating the measurement
+process for modal analysis are two-fold. Firstly, automation would allow the
+entire process to take place with minimum manual intervention, saving time in
+labour and potentially time in carrying out measurements. Secondly, an automated
+process would make measurements more easily reproducible. Multiple rounds of
+measurements could be taken and the accuracy of the experimental setup could be
+more easily tested. Such a measurement arrangement would allow for automated
+scanning. The 3D printed impact hammer used for measurements  in \cite{RAU} can
+also be combined with an actuator (e.g. a solenoid) for reproducible excitation.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/linear-scanning-ldv.png}
+\caption{LDV Mounted to plotter (labelled X-Y sliding table) \cite{HUI}}
+\label{fig:ldv-linear-scanner}
+\end{figure}
+
 
 For instrument restoration such as demonstrated in \cite{MOYNE}, laser
 vibrometry is a tool for being able to recreate an instrument. For such a
