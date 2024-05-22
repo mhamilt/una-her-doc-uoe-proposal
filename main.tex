@@ -52,7 +52,7 @@
 \urlstyle{same}
 \hypersetup{ hidelinks, pdfcreator={LaTeX via pandoc}}
 
-\title{Autmated Non-contact measurement system design for muscial instryment soundboards}
+\title{Automated Non-Contact Measurement System Design For Musical Instrument Soundboards}
 \author{Matthew Hamilton}
 \date{\today}
 
@@ -71,34 +71,32 @@
 \hypertarget{overview}{%
 \section{Overview}\label{overview}}
 
-Modal analysis is a method to extrapolate frequency response, vibration patterns
-of a surface \cite{SKRODZKA, MOYNE}, and can also provide a means of estimating
-material properties \cite{DUCCESCHI2024109949}, which is important information
-in the analysis of musical instruments \cite{FRITZ,MOYNE,ELEJABARRIETA}.
-
-Risk to a musical instrument is prominent concern during analysis, in particular
-to historic musical instruments. This has lead to the emergence of non-contact
-methods for analysis, which are an appealing method for modal analysis for
-fragile, historically important, and expensive instruments.
+Modal analysis provides an understanding of material frequency response,
+vibration patterns through mode shapes \cite{SKRODZKA, MOYNE}, and can also
+provide a means of estimating material properties \cite{DUCCESCHI2024109949}.
+Risk to an instrument is prominent concern during analysis, in particular to
+historic musical instruments. This has lead to the emergence of non-contact
+methods for measuring vibration. These new methods are appealing for modal
+analysis for fragile or expensive instruments. 
 
 Laser vibrometry has long been a useful tool for acoustic analysis
 \cite{SRIRIAM}, especially with respect to musical instruments. Laser vibrometry
 provides a non-obtrusive means of obtaining accurate results, however it does
-have a limitation in the form of cost. A modest laser doppler vibrometer (LDV)
+have a limitation in the form of cost. A modest Laser Doppler Vibrometer (LDV)
 cost in the order of €20k. In addition, estimation of material properties of
 soundboards comes with an additional cost of Finite Element Method modelling
 software. This is a cost that is difficult to justify for the usage it would see
 by instrument collector and museums. The market for laser vibrometer is also
 dominated by a handful of companies and it seems unlikely this cost will shrink
 any time soon. Laser vibrometers are precision engineered for all vibration
-analysis, a level accuracy unlikely to be utlilsed when applied to musical
+analysis, a level accuracy unlikely to be utilised when applied to musical
 instruments. 
 
 The thesis by Malah \cite{MALAHS2015DESIGNOA} outlines such a system for a
 Grazing Laser Vibrometer. The proposed project would expand Malah's work by
 applying it to a Laser Doppler Vibrometer. In addition, the project will explore
 automating the process of measurement and provide an open source framework for
-analysing results.
+analysing result.
 
 \begin{figure}
   \centering
@@ -107,51 +105,15 @@ analysing results.
   \label{fig:ldv-setup}
 \end{figure}
 
-
-The barrier to entry for technical projects of this kind has been lowered over
-the past few decades. What was once quite a technical undertaking is now more
-achievable with readily available micro-controller units (MCUs) like the Arduino
-or single-board computers (SBCs) like the Raspberry Pi, which can easily
-interface with sensors and actuators to prototype haptic devices. 
-
-\begin{figure}
-\centering
-\includegraphics[width=0.66\textwidth]{./img/guitar-mode-table.png}
-\caption{Table of guitar body mode shapes derived from LDV in \cite{SKRODZKA}}
-\label{fig:ldv-setup}
-\end{figure}
-
-\hypertarget{recent-research}{%
-\subsection{Recent Research}\label{recent-research}}
-
-This section will discuss some projects from previous years focused on the
-topics of non-contact, automated modal analysis and making the process more
-economically accessible. 
-
- The thesis by Matiss Malahs \cite{MALAHS2015DESIGNOA} researched low-cost laser
-vibrometer system. The thesis provides an overview of interferometry, laser
-doppler vibrometers and Grazing laser vibrometers as well as an instruction on
-fabricating a GLV economically. The proposed project would aim to expand on
-Matiss's work by exploring the construction of both affordable LDV and GLV
-measurement units, in particular with an application to soundboards. Measuring
-musical instrument soundboard does not require as wide a frequency bandwidth
-compared to other vibration analysis applications. Frequency analysis for
-soundboards generally considers up to 20kHz and a standard LDV would have a
-bandwidth of up to 1000kHz \cite{PSV400}. The results obtain in the paper by
-Malahs suggests the bandwidth of the LDV can be reduced to the benefit of lower
-manufacturing costs.
-
-The paper by Hui et al. \cite{HUI} considers the pairing of a linear scanning
-unit with a laser vibrometer, which allowed for high-resolution results to be
-obtained. This project would expand by applying the same methodology to an
-economic laser vibrometer assembly as a measurement setup of this kind would
-allow for automated scanning. The benefits of automating the measurement
-process for modal analysis are two-fold. Firstly, automation would allow the
-entire process to take place with minimum manual intervention, saving time in
-labour and potentially time in carrying out measurements. Secondly, an automated
-process would make measurements more easily reproducible. Multiple rounds of
-measurements could be taken and the accuracy of the experimental setup could be
-more easily tested. Such a measurement arrangement would allow for automated
+  
+The benefits of automating the measurement process for modal analysis are
+two-fold. Firstly, automation would allow the entire process to take place with
+minimum manual intervention, saving time in labour and potentially time in
+carrying out measurements. Secondly, an automated process would make
+measurements more easily reproducible. Multiple rounds of measurements could be
+taken and the accuracy of the experimental setup could be more easily tested.
+Linear scanning using a standard two-dimensional plotter yielded high-resolution
+results in \cite{HUI}. Such a measurement arrangement would allow for automated
 scanning. The 3D printed impact hammer used for measurements  in \cite{RAU} can
 also be combined with an actuator (e.g. a solenoid) for reproducible excitation.
 
@@ -162,12 +124,86 @@ also be combined with an actuator (e.g. a solenoid) for reproducible excitation.
 \label{fig:ldv-linear-scanner}
 \end{figure}
 
+One large draw back of the approach in the paper by Hui et al is in scaling the
+project. For the soundboard of an instrument such as a violin or a guitar the
+scale of the sliding table assembly is relatively low cost and achievable. If a
+piano or harpsichord sound board is to be considered the material costs and
+labour cost in assembly are not insignificant. 
 
-For instrument restoration such as demonstrated in \cite{MOYNE}, laser
-vibrometry is a tool for being able to recreate an instrument. For such a
-use-case, the project would aim to provide an estimation of the material
-properties which can be used cross referenced with material properties found in
-literature.
+Another interesting approach to automated scanning would be through the use of
+mirror galvanometers. A mirror galvanometer consists of a mirror attached to a
+rotating spindle on its central axis. The spindle is attached to an assembly
+similar to that of a stepper motor. The degree of rotation changes depending on
+the voltage applied to the internal circuit. A common modern commercial
+application for a pair of mirror galvanometers to be used with a laser is in
+animated laser light displays. Given this commercial use, mirror galvanometers
+can be sourced for an economic cost.
+
+benefits of using galvanometers as a means of creating a scanning LDV is that
+they would address the problem of scaling. In order to scan a larger are the
+laser can simply be moved further away from the sound board. There is no
+mechanical travel of the laser which would also reduce scanning time. Such a
+system was used in the thesis by Rau \cite{RAU_THESIS} to successful measure the
+sound board of a guitar sound board. One limitation of digitally controlling a
+galvanometer is the bit-depth of the digital to analog converter that is used.
+In the thesis by Rau \cite{RAU_THESIS} a 12-bit DAC was used, which provides a
+4096 x 4096 grid. A grid of that size would be fine for the size of a guitar or
+violin top plate, but in order to accommodate larger soundboards it would be
+beneficial to select a DAC of a higher bit-depth.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/mirror-galv.pdf}
+\caption{Setup of mirror galvanometer pair from \cite{GALVO} illustrating how
+rotation of mirrors translates to project onto a 2D plane}
+\label{fig:mirror-galv}
+\end{figure}
+
+The barrier to entry for technical projects of this kind has been lowered over
+the past few decades. What was once quite a technical undertaking is now more
+achievable with readily available micro-controller units (MCUs) like the Arduino
+or single-board computers (SBCs) like the Raspberry Pi, which can easily
+interface with sensors and actuators to prototype haptic devices. This proposal
+will cover what components will be required in the project and what function
+they will serve.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/guitar-mode-table.png}
+\caption{Table of guitar body mode shapes derived from LDV in \cite{SKRODZKA}}
+\label{fig:guitar-mode-table}
+\end{figure}
+
+\hypertarget{recent-research}{%
+\subsection{Recent Research}\label{recent-research}}
+
+This section will discuss some projects from the last 15 years focused on the
+topics of non-contact, automated modal analysis and making the process more
+economically accessible. I will then elaborate on how the proposed projects
+intends to enhance and build on these projects. 
+
+Matiss Malahs researched low-cost laser vibrometer system for a PhD thesis
+\cite{MALAHS2015DESIGNOA}. The thesis is an overview of interferometry, LDVs and
+Grazing Laser Vibrometers (GLV) as well as an instruction on fabricating a GLV
+economically. This project would expand on Matiss's work by exploring the
+construction of both affordable LDV and GLV measurement units, in particular
+with an application to soundboards. Measuring musical instrument soundboard does
+not require as wide a frequency bandwidth compared to other vibration analysis
+applications. The Polytec PSV400  has bandwidth up to 1000kHz \cite{PSV400},
+compare to soundboards where only up to 20kHz are consideration for measurement
+as it is the limit of human hearing.
+
+The paper of Hui et al. \cite{HUI} considers the addition of a linear scanning
+unit paired with a laser vibrometer. In this paper high-resolution results were
+obtained with a XY sliding table. A sliding table can be sourced for a
+relatively low cost and is therefore within the scope of an affordable linear
+scanning assembly
+
+The paper by Le Moyne \cite{MOYNE} provides an example of how laser vibrometry
+is used as a tool in musical instrument restoration. use-case, The project would
+aim to provide a tool for just such a use-case where an estimation of the
+material properties can be used to cross-reference with material properties
+found in literature.
 
 Laser vibrometry and its application and practicalities within the field of
 musical acoustics is still actively being explored, but it is not the only
@@ -184,23 +220,20 @@ identified with high accuracy. Identification of the mode shapes and the damping
 constants are shown not to be accurate.
 \end{quote}
 
-Since the focus of the project is on derivation of mode frequencies and shapes
-exploration specifically is not a goal of the project, the usage of MEMs
-microphone arrays has not been considered.
-
-\cite{RAU}
+Since the focus of the project is on the derivation of mode shapes, as well as
+mode frequencies, the usage of MEMs microphone arrays has not been considered.
 
 \hypertarget{project-description}{%
 \subsection{Project Description}\label{project-description}}
 
-The project would aim to to look at 2 types of laser vibrometry.
+The project would aim to to look at two types of laser vibrometry methods.
 
 \begin{itemize}
 \tightlist
 \item
-  Laser Doppler
+  Laser Doppler Velocimetry
 \item
-  Grazing Laser
+  Grazing Laser Vibrometry
 \end{itemize}
 
 Each method has a base cost for the most simple instance, with extra costs
@@ -330,26 +363,43 @@ Element 14 were used as a source for guide prices:
     for processing data. As such, an ADC of similar specifications would be
     desirable. (Guide Price: £650)
   \item
-    Linear Scanning Rig: An assembly of multiple stepper motors cascade onto two
-    sets of rails, one for movement in 2 dimensions. These rigs can be purchased
-    as a kit or assembled from separate parts if a suitable size is not
-    available. This assembly can be seen in Figure \ref{fig:ldv-linear-scanner}
-    labelled as ``X-Y Sliding Table'' (Guide Price: £400). They consist of: 
-    \begin{itemize}
+    Linear Scanning Rig using either:
+    \begin{enumerate}
     \tightlist
     \item
-      Stepper Motor: Motors and associated driver chips that can be controlled
-      step-wise for accuracy.
+        An assembly of multiple stepper motors cascade onto two sets of rails,
+        one for movement in 2 dimensions. These rigs can be purchased as a kit
+        or assembled from separate parts if a suitable size is not available.
+        This assembly can be seen in Figure \ref{fig:ldv-linear-scanner}
+        labelled as ``X-Y Sliding Table'' (Guide Price: £400). They consist of: 
+        \begin{itemize}
+        \tightlist
+        \item
+          Stepper Motor: Motors and associated driver chips that can be
+          controlled step-wise for accuracy.
+        \item
+          Micro-Controller Unit: Programmable computer chip that would allow for
+          firmware to be written in order to control the steppers.
+        \item
+          Guide Rails: Lubricated aluminium rails to help guide each platform
+          along a particular dimensions
+        \item
+          Aluminium Extrusion: Used as frame and platform for stepper motors and
+          the vibrometer assembly.
+        \end{itemize}
     \item
-      Micro-Controller Unit: Programmable computer chip that would allow for
-      firmware to be written in order to control the steppers.
-    \item
-      Guide Rails: Lubricated aluminium rails to help guide each platform along
-      a particular dimensions
-    \item
-      Aluminium Extrusion: Used as frame and platform for stepper motors and the
-      vibrometer assembly.
-    \end{itemize}
+        A pair of mirror galvanometers, such as in \ref{fig:mirror-galv},
+        controlled by a MCU. Consisting of: 
+        \begin{itemize}
+        \tightlist
+        \item
+            Mirror Galvanometer pair (Guide Price: £200)
+        \item
+            Micro-controller
+        \item
+            16-bit DAC
+        \end{itemize}
+    \end{enumerate}
   \end{itemize}
 
 \hypertarget{optics}{%
