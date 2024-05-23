@@ -112,57 +112,13 @@ minimum manual intervention, saving time in labour and potentially time in
 carrying out measurements. Secondly, an automated process would make
 measurements more easily reproducible. Multiple rounds of measurements could be
 taken and the accuracy of the experimental setup could be more easily tested.
-Linear scanning using a standard two-dimensional plotter yielded high-resolution
-results in \cite{HUI}. Such a measurement arrangement would allow for automated
-scanning. The 3D printed impact hammer used for measurements  in \cite{RAU} can
-also be combined with an actuator (e.g. a solenoid) for reproducible excitation.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.66\textwidth]{./img/linear-scanning-ldv.png}
-\caption{LDV Mounted to plotter (labelled X-Y sliding table) \cite{HUI}}
-\label{fig:ldv-linear-scanner}
-\end{figure}
-
-One large draw back of the approach in the paper by Hui et al is in scaling the
-project. For the soundboard of an instrument such as a violin or a guitar the
-scale of the sliding table assembly is relatively low cost and achievable. If a
-piano or harpsichord sound board is to be considered the material costs and
-labour cost in assembly are not insignificant. 
-
-Another interesting approach to automated scanning would be through the use of
-mirror galvanometers. A mirror galvanometer consists of a mirror attached to a
-rotating spindle on its central axis. The spindle is attached to an assembly
-similar to that of a stepper motor. The degree of rotation changes depending on
-the voltage applied to the internal circuit. A common modern commercial
-application for a pair of mirror galvanometers to be used with a laser is in
-animated laser light displays. Given this commercial use, mirror galvanometers
-can be sourced for an economic cost.
-
-benefits of using galvanometers as a means of creating a scanning LDV is that
-they would address the problem of scaling. In order to scan a larger are the
-laser can simply be moved further away from the sound board. There is no
-mechanical travel of the laser which would also reduce scanning time. Such a
-system was used in the thesis by Rau \cite{RAU_THESIS} to successful measure the
-sound board of a guitar sound board. One limitation of digitally controlling a
-galvanometer is the bit-depth of the digital to analog converter that is used.
-In the thesis by Rau \cite{RAU_THESIS} a 12-bit DAC was used, which provides a
-4096 x 4096 grid. A grid of that size would be fine for the size of a guitar or
-violin top plate, but in order to accommodate larger soundboards it would be
-beneficial to select a DAC of a higher bit-depth.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.66\textwidth]{./img/mirror-galv.pdf}
-\caption{Setup of mirror galvanometer pair from \cite{GALVO} illustrating how
-rotation of mirrors translates to project onto a 2D plane}
-\label{fig:mirror-galv}
-\end{figure}
+The project aims to explore viable, affordable and reproducible means for
+augmenting a laser vibrometer to a scanning laser vibrometer.
 
 The barrier to entry for technical projects of this kind has been lowered over
 the past few decades. What was once quite a technical undertaking is now more
-achievable with readily available micro-controller units (MCUs) like the Arduino
-or single-board computers (SBCs) like the Raspberry Pi, which can easily
+achievable with readily available micro-controller units (MCU) like the Arduino
+or single-board computers (SBC) like the Raspberry Pi, which can easily
 interface with sensors and actuators to prototype haptic devices. This proposal
 will cover what components will be required in the project and what function
 they will serve.
@@ -193,17 +149,96 @@ applications. The Polytec PSV400  has bandwidth up to 1000kHz \cite{PSV400},
 compare to soundboards where only up to 20kHz are consideration for measurement
 as it is the limit of human hearing.
 
+Primary application for scanning instruments is the ability to cross-reference
+results with those obtained within simulation. 
+
+Paper by Tahvanainen et al. \cite{HENNA} necessitated the measurements of eight
+guitars, one with laser vribrometery, in order to obtain an agregate set of of
+mosde shapes and top plate velocities. In this case research place at Yamaha
+Research and Devlopment and  is a best case scenarion with respect to acces to
+materials and tools. Low cost laser scanning virborrmetr would lower the barrier
+in both cost and labour for projects of this kind making it more accessible.
+
+Similarly, \cite{GUITAR_3D_SCAN} measured guitar mode shapes and frequencies for
+comparison with those of a finite element model.
+
+\cite{VIOLIN_3D_SCAN} Scanning laser vibrometer used for top plate measure of a
+violin fabricated with bio-based composite materials.
+
+The paper by Le Moyne \cite{MOYNE} provides an example of when non contact
+measurements are essential in musical instrument restoration. In this case a
+17th century Couchet harspichord was to be reconstructed.  In this case a
+nearfield acoustical holography approach was taken. This was to avoid the need
+for use of an impact hammer. Less intrusive methods of excitation are available,
+such was used in \cite{HENNA} where a non-invasive excitation was achieved using
+random noise in a speaker. The project would aim to provide a readily available
+tool for musical instrument collection to use for the monitoring and restoration
+of musical instruments.
+
+All the above projects that use laser vibrometry, utilised scanning laser
+vibrometers. A scanning LDV is typically in the price range of £100k as opposed
+to £30k for a non-scanning LDV. The scanning LDV dratically reduces labour as
+the need for repositioning the LDV is bypassed entirely. The project aims to
+develop further methods that have been used in recent researched for obtaining
+an affordable method to augment an LDV into a scanning LDV.
+
 The paper of Hui et al. \cite{HUI} considers the addition of a linear scanning
 unit paired with a laser vibrometer. In this paper high-resolution results were
 obtained with a XY sliding table. A sliding table can be sourced for a
 relatively low cost and is therefore within the scope of an affordable linear
-scanning assembly
+scanning assembly.
 
-The paper by Le Moyne \cite{MOYNE} provides an example of how laser vibrometry
-is used as a tool in musical instrument restoration. use-case, The project would
-aim to provide a tool for just such a use-case where an estimation of the
-material properties can be used to cross-reference with material properties
-found in literature.
+Linear scanning using a standard two-dimensional plotter yielded high-resolution
+results in \cite{HUI}. Such a measurement arrangement would allow for automated
+scanning. The 3D printed impact hammer used for measurements  in \cite{RAU} can
+also be combined with an actuator (e.g. a solenoid) for reproducible excitation.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/linear-scanning-ldv.png}
+\caption{LDV Mounted to plotter (labelled X-Y sliding table) \cite{HUI}}
+\label{fig:ldv-linear-scanner}
+\end{figure}
+
+One large draw back of the approach in the paper by Hui et al is in scaling the
+project. For the soundboard of an instrument such as a violin or a guitar the
+scale of the sliding table assembly is relatively low cost and achievable. If a
+piano or harpsichord sound board is to be considered the material costs and
+labour cost in assembly are not insignificant. 
+
+Another interesting approach to automated scanning would be through the use of
+mirror galvanometers. A mirror galvanometer consists of a mirror attached to a
+rotating spindle on its central axis. The spindle is attached to an assembly
+similar to that of a stepper motor. The degree of rotation changes depending on
+the voltage applied to the internal circuit. This arrangement allows for a laser
+beam to be aimed at a point on a 2 dimensional plane using the rotational
+movement \ref{fig:mirror-galv}. A common modern commercial application for a
+pair of mirror galvanometers to be used with a laser is in animated laser light
+displays. Given this commercial use, mirror galvanometers can be sourced for an
+economic cost.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.66\textwidth]{./img/mirror-galv.pdf}
+\caption{Setup of mirror galvanometer pair from \cite{GALVO} illustrating how
+rotation of mirrors translates to project onto a 2D plane}
+\label{fig:mirror-galv}
+\end{figure}
+
+The benefit of using mirror galvanometers a means of creating a scanning LDV is
+that they would address the problem of scaling to larger soundboards. In order
+to scan a larger area, the laser can simply be moved further away from the
+soundboard. The mechanical travel is also less in comparison to the sliding
+table, meaning scanning time would also be reduced. Such a system was used in
+the thesis by Rau \cite{RAU_THESIS} to successfully measure the soundboard of a
+guitar. One limitation of digitally controlling a mirror galvanometer is number
+of potential points that can be measured. The bit-depth of the digital to analog
+converter (DAC) that is used dictates the number of available grid points. In
+the thesis by Rau \cite{RAU_THESIS} a 12-bit DAC was used, which provides a 4096
+x 4096 grid of points that can be measured. A grid of that size would be
+sufficient for a guitar or violin top plate, but in order to accommodate larger
+soundboards, such as for piano or harpsichord, it would be beneficial to select
+a DAC with a higher bit-depth.
 
 Laser vibrometry and its application and practicalities within the field of
 musical acoustics is still actively being explored, but it is not the only
@@ -267,8 +302,7 @@ instrument soundboards consisting of:
 \begin{itemize}
 \tightlist
   \item
-    Operation Repository: An open source repository containing:
-
+    Operation Manual Repository: An open source repository containing:
   \begin{itemize}
   \tightlist
     \item
@@ -367,11 +401,12 @@ Element 14 were used as a source for guide prices:
     \begin{enumerate}
     \tightlist
     \item
-        An assembly of multiple stepper motors cascade onto two sets of rails,
-        one for movement in 2 dimensions. These rigs can be purchased as a kit
-        or assembled from separate parts if a suitable size is not available.
-        This assembly can be seen in Figure \ref{fig:ldv-linear-scanner}
-        labelled as ``X-Y Sliding Table'' (Guide Price: £400). They consist of: 
+        An assembly of multiple stepper motors cascaded onto two sets of guide
+        rails to for movement in 2 dimensions. These rigs can be purchased as a
+        kit or assembled from separate parts if a suitable size is not
+        available. This assembly can be seen in Figure
+        \ref{fig:ldv-linear-scanner} labelled as ``X-Y Sliding Table'' (Guide
+        Price: £400). They consist of: 
         \begin{itemize}
         \tightlist
         \item
