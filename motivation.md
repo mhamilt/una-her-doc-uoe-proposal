@@ -1,22 +1,11 @@
 > Please give a short statement that describes your academic interests, purpose, objectives and motivation in undertaking this postgraduate study.
 
-- your academic interests
+My core academics interests are the physics of musical instruments, its application to their fabrication, and tackling the challenges of sustainability and reproducibility. 
 
-Interested in tackling the challenges of sustainability and reproducibility with respect to musical instrument production and historic instrument conservation.
+My motivations stem from my time training as a luthier and observing the rise in CAD/CAM processes in musical instrument manufacture. I also observed the environmental impact of the industry along with further international restrictions of the materials used during instrument production.
 
-- purpose
+My objective is to explore how digital technologies can be used to produce more accessible and economically viable tools for the analysis of historical musical instruments.
 
-Software sustainability
+ Musical instruments pose a challenging problem in that they are both a tool and an aesthetic object. Curators, luthiers and musicians need to be able to maintain and interact with historical musical instruments without endangering their structural integrity. My academic purpose during this project is to address this issue by exploring and creating tools that can assist in this process.
 
-The digital systems that we author today should be maintainable if they are to be used for conservation.
 
-Digital conservation of musical instruments and the digitization of society.
-
-- objectives
-
-To author transparent and accessible frameworks that bridge the gap between the domains of computer science, organology and cultural heritage.
-
-Aim is to create an open source hardware and software toolkit for non-contact measurement for wooden musical instrument soundboards. The tools would be used to analyse frequency response of soundboards as well as non-invasive estimation of material properties.
-
-- motivation in undertaking this postgraduate study.
-A musical instrument pose the interesting problem of being both a tool and an aesthetics object. My motivation is to try and explore how curators, luthiers and musicians can continue maintain and interact with the musical instruments of our past accessibly, without jeopardizing them.
