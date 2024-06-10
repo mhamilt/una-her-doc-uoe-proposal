@@ -6,6 +6,6 @@ My motivations stem from my time training as a luthier and observing the rise in
 
 My objective is to explore how digital technologies can be used to produce more accessible and economically viable tools for the analysis of historical musical instruments.
 
- Musical instruments pose a challenging problem in that they are both a tool and an aesthetic object. Curators, luthiers and musicians need to be able to maintain and interact with historical musical instruments without endangering their structural integrity. My academic purpose during this project is to address this issue by exploring and creating tools that can assist in this process.
+Musical instruments pose a challenging problem in that they are both a tool and an aesthetic object. Curators, luthiers and musicians need to be able to maintain and interact with historical musical instruments without endangering their structural integrity. My academic purpose during this project is to address this issue by exploring and creating tools that can assist in this process.
 
 
